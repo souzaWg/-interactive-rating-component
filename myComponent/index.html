@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.css" />
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/brands.min.css" />
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main> 
+  <div class="container">
+    <div class="box" data-visible="false">
+    <div class="box-1">
+    <div class="box-content">
+        <img src="/images/icon-star.svg" />
+      </div><!--box-content-->
+      <div class="pad2" style="padding: 0 10%;">
+      
+      <div class="box-text">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div><!--box-text-->
+
+      <div class="box-classification">
+        <div class="box-number"><button class="n-box" value="a">1</button></div>
+        <div class="box-number"><button class="n-box" value="2">2</button></div>
+        <div class="box-number"><button class="n-box active" value="3">3</button></div>
+        <div class="box-number"><button class="n-box" value="4">4</button></div>
+        <div class="box-number"><button class="n-box" value="5">5</button></div>
+      </div>
+
+    <div class="button">                       
+     <input type="submit" class="submit" value="submit" />
+    </div>
+  </div>
+</div>
+  <div class="box-2 hide">
+    <div class="img-box">
+      <img src="/images/illustration-thank-you.svg" /> 
+   </div>
+
+   <div class="y-selected">
+     <div class="sentence">
+       <p>You selected <span class="score">4</span> out of 5</p>
+     </div>
+   </div>
+
+   
+     <div class="title">
+         <h1>Thank you!</h1>
+     </div>
+    <div class="text">
+     <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+
+   </div><!--text-->
+  </div>
+
+    </div><!--padd2-->
+  </div><!--box-->
+</div><!--container-->
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
